@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galería</title>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="galeria.html">Galería</a>
+      <a href="contacto.html">Contacto</a>
+    </nav>
+  </header>
+
+  <main style="text-align: center;">
+    <h1>Galería Adaptativa</h1>
+
+    <section style="max-width: 900px; margin: auto; padding: 1em;">
+      <p style="text-align: justify;">
+        Esta sección presenta ejemplos de imágenes adaptativas, animaciones SVG y transiciones con CSS,
+        cumpliendo los requerimientos de la unidad. Aquí se demuestra el uso del elemento <code>&lt;picture&gt;</code>,
+        SVG dinámico, y animaciones visuales como parte de una galería moderna e interactiva.
+      </p>
+    </section>
+
+    <section>
+      <h2>Imagen Adaptativa</h2>
+      <picture>
+        <source media="(min-width: 768px)" srcset="img/imagen-grande.jpg">
+        <source media="(max-width: 767px)" srcset="img/imagen-pequeña.jpg">
+        <img src="img/imagen-grande.jpg" alt="Imagen adaptativa" style="max-width: 90%; height: auto;">
+      </picture>
+      <p style="font-style: italic;">Esta imagen se adapta al tamaño de la pantalla.</p>
+    </section>
+
+    <section>
+      <h2>Animación SVG</h2>
+      <svg width="200" height="100" viewBox="0 0 200 100" xmlns="http://www.w3.org/2000/svg">
+        <polygon points="10,50 60,40 65,30 80,30 70,50 80,70 65,70 60,60" fill="#007acc">
+          <animateTransform attributeName="transform" type="translate" from="0 0" to="100 0" dur="2s" repeatCount="indefinite"/>
+        </polygon>
+      </svg>
+      <p style="font-style: italic;">Animación SVG: Avión en movimiento simulando vuelo.</p>
+    </section>
+
+    <section>
+      <h2>Animación con CSS</h2>
+      <div class="cuadro-animado"></div>
+      <p style="font-style: italic;">Este bloque se anima con <code>@keyframes</code> de CSS.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Proyecto Web - Galería</p>
+  </footer>
+</body>
+</html>
+
+

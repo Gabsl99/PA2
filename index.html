@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Sitio web educativo con imágenes adaptativas, formularios y multimedia interactiva." />
+  <link rel="stylesheet" href="css/estilos.css" />
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <title>Inicio | Proyecto Web</title>
+</head>
+<body>
+  <header>
+    <img src="img/logo.svg" alt="Logo del sitio" class="logo" />
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="galeria.html">Galería</a>
+      <a href="contacto.html">Contacto</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1 style="text-align: center;">Bienvenido a Nuestro Sitio Web</h1>
+
+    <section style="max-width: 900px; margin: auto; padding: 1em;">
+      <p style="text-align: justify;">
+        Este sitio web es parte del Producto Académico N.º 2 para la evaluación de la unidad de Diseño Web.
+        En esta página de inicio, se presenta una imagen destacada relacionada con el tema de viajes, 
+        que simboliza el uso de recursos multimedia adaptativos aplicados a un diseño web moderno.
+      </p>
+      <figure style="text-align: center;">
+        <img src="img/imagen-destacada.jpg" alt="Imagen destacada" style="width: 600px; height: auto; margin: auto;">
+        <figcaption>Explorando los recursos multimedia en la web</figcaption>
+      </figure>
+    </section>
+
+    <section style="text-align: center;">
+      <h2>Mapa Interactivo (Image Map)</h2>
+      <figure>
+        <img src="img/mapa-interactivo.jpg" usemap="#image-map" alt="Mapa de Sudamérica" width="600" style="display: block; margin: 0 auto;">
+        <figcaption style="font-style: italic; margin-top: 0.5em;">
+          Pasa el mouse por Perú o Brasil y haz clic para visitar sus páginas oficiales de turismo.
+        </figcaption>
+      </figure>
+
+      <map name="image-map">
+        <area target="_blank" alt="PERÚ" title="PERÚ" href="https://www.peru.travel/es" coords="237,126,197,106,152,132,189,211,235,239,245,189,211,166" shape="poly">
+        <area target="_blank" alt="BRASIL" title="BRASIL" href="https://visitbrasil.com/es/" coords="246,94,276,96,301,71,317,89,365,77,407,112,485,141,455,200,442,266,384,290,384,328,357,358,325,328,351,292,324,258,325,222,263,177,222,167" shape="poly">
+      </map>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Gabriel Rodriguez</p>
+  </footer>
+</body>
+</html>
+
+

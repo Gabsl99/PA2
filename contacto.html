@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto</title>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="galeria.html">Galería</a>
+      <a href="contacto.html">Contacto</a>
+    </nav>
+  </header>
+
+  <main style="max-width: 900px; margin: auto; padding: 1em;">
+    <h1 style="text-align: center;">Formulario de Contacto</h1>
+
+    <p style="text-align: justify;">
+      A continuación puedes enviarnos tus dudas o sugerencias mediante el siguiente formulario. También puedes revisar
+      nuestros horarios de atención más abajo. Esta sección cumple con el uso de formularios HTML5 y tablas, según los
+      criterios establecidos en la evaluación parcial de Diseño Web.
+    </p>
+
+    <form>
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre" required>
+
+      <label for="correo">Correo:</label>
+      <input type="email" id="correo" name="correo" required>
+
+      <label for="asunto">Asunto:</label>
+      <input type="text" id="asunto" name="asunto" required>
+
+      <label for="mensaje">Mensaje:</label>
+      <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+
+      <button type="submit">Enviar</button>
+    </form>
+
+    <section style="margin-top: 3em;">
+      <h2>Tabla de Horarios</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Día</th>
+            <th>Horario</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Lunes</td><td>9:00 - 19:00</td></tr>
+          <tr><td>Martes</td><td>9:00 - 19:00</td></tr>
+          <tr><td>Miércoles</td><td>9:00 - 19:00</td></tr>
+          <tr><td>Jueves</td><td>9:00 - 19:00</td></tr>
+          <tr><td>Viernes</td><td>9:00 - 19:00</td></tr>
+          <tr><td>Sábado</td><td>10:00 - 14:00</td></tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <footer>
+    <p>Proyecto Web - Contacto</p>
+  </footer>
+</body>
+</html>
